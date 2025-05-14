@@ -1,2 +1,9 @@
-# Projetophp
-Triste
+
+CREATE DATABASE drtec CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE drtec;
+
+CREATE TABLE usuarios(id INT AUTO_INCREMENT PRIMARY KEY, usuario VARCHAR(50) NOT NULL, senha VARCHAR(50) NOT NULL);
+
+INSERT INTO usuarios(usucario, senha) VALUES ('admin','1234');
+
+CREATE TABLE produtos(id INT AUTO_INCREMENT PRIMARY KEY, nome VARCHAR(100) NOT NULL, preco DECIMAL(10,2) NOT NULL, imagem VARCHAR(255));
